@@ -4307,7 +4307,7 @@ vphysics2.dll:
 
 
 meshsystem.dll:
-  No schemes classes available | meshsystem.dll
+  No schemes classes available
 
 
 soundsystem.dll:
@@ -8587,7 +8587,7 @@ particles.dll:
 
 
 panorama.dll:
-  No schemes classes available | panorama.dll
+  No schemes classes available
 
 
 server.dll:
@@ -19535,4 +19535,4 @@ client.dll:
 
 
 scenefilecache.dll:
-  No schemes classes available | scenefilecache.dll
+  No schemes classes available
