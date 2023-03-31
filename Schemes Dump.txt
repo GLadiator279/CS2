@@ -1,4 +1,4 @@
-Output format: module | schema name (class + field) | offset
+Output format: module | schema name (class + field) | field offset
 Schema: schemasystem.dll | CSchemaSystemInternalRegistration->m_Vector2D | 0X000000
 Schema: schemasystem.dll | CSchemaSystemInternalRegistration->m_Vector | 0X000008
 Schema: schemasystem.dll | CSchemaSystemInternalRegistration->m_VectorAligned | 0X000020
