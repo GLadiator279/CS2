@@ -1,2 +1,2 @@
 # Credits
-https://github.com/neverlosecc/source2gen
+[source2gen](https://github.com/neverlosecc/source2gen)
