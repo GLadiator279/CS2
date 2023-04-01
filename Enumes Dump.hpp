@@ -269,10 +269,6 @@ enum ViewFadeMode_t : std::uint32_t {
 
 #pragma endregion
 
-#pragma region networksystem.dll
-
-#pragma endregion
-
 #pragma region animationsystem.dll
 
 enum MoodType_t : std::uint32_t {
@@ -968,8 +964,6 @@ enum JointMotion_t : std::uint32_t {
 };
 
 #pragma endregion
-
-#pragma region meshsystem.dll
 
 #pragma region soundsystem.dll
 
@@ -4221,6 +4215,4 @@ enum CompositeMaterialInputContainerSourceType_t : std::uint32_t {
 };
 
 #pragma endregion
-
-#pragma region scenefilecache.dll
 
