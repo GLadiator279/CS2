@@ -117,7 +117,7 @@ enum FuseVariableType_t : std::uint8_t {
 #pragma region rendersystemdx11.dll
 
 enum RenderSlotType_t : std::uint32_t {
-  RENDER_SLOT_INVALID = 18446744073709551615,
+  RENDER_SLOT_INVALID = -1,
   RENDER_SLOT_PER_VERTEX = 0,
   RENDER_SLOT_PER_INSTANCE = 1,
 };
@@ -190,7 +190,7 @@ enum InputLayoutVariation_t : std::uint32_t {
 };
 
 enum RenderMultisampleType_t : std::uint32_t {
-  RENDER_MULTISAMPLE_INVALID = 18446744073709551615,
+  RENDER_MULTISAMPLE_INVALID = -1,
   RENDER_MULTISAMPLE_NONE = 0,
   RENDER_MULTISAMPLE_2X = 1,
   RENDER_MULTISAMPLE_4X = 2,
@@ -225,7 +225,7 @@ enum EntityDormancyType_t : std::uint32_t {
 };
 
 enum EntityIOTargetType_t : std::uint32_t {
-  ENTITY_IO_TARGET_INVALID = 18446744073709551615,
+  ENTITY_IO_TARGET_INVALID = -1,
   ENTITY_IO_TARGET_ENTITYNAME = 2,
   ENTITY_IO_TARGET_EHANDLE = 6,
   ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME = 7,
@@ -323,7 +323,7 @@ enum SeqPoseSetting_t : std::uint32_t {
 };
 
 enum ParticleAttachment_t : std::uint32_t {
-  PATTACH_INVALID = 18446744073709551615,
+  PATTACH_INVALID = -1,
   PATTACH_ABSORIGIN = 0,
   PATTACH_ABSORIGIN_FOLLOW = 1,
   PATTACH_CUSTOMORIGIN = 2,
@@ -364,7 +364,7 @@ enum AnimParamType_t : std::uint8_t {
 };
 
 enum BoneTransformSpace_t : std::uint32_t {
-  BoneTransformSpace_Invalid = 18446744073709551615,
+  BoneTransformSpace_Invalid = -1,
   BoneTransformSpace_Parent = 0,
   BoneTransformSpace_Model = 1,
   BoneTransformSpace_World = 2,
@@ -660,7 +660,7 @@ enum MatterialAttributeTagType_t : std::uint32_t {
 };
 
 enum AnimScriptType : std::uint16_t {
-  ANIMSCRIPT_TYPE_INVALID = 18446744073709551615,
+  ANIMSCRIPT_TYPE_INVALID = -1,
   ANIMSCRIPT_FUSE_GENERAL = 0,
   ANIMSCRIPT_FUSE_STATEMACHINE = 1,
   ANIMSCRIPT_EXPRTK = 2,
@@ -876,14 +876,14 @@ enum PermModelInfo_t::FlagEnum : std::uint32_t {
 };
 
 enum ModelBoneFlexComponent_t : std::uint32_t {
-  MODEL_BONE_FLEX_INVALID = 18446744073709551615,
+  MODEL_BONE_FLEX_INVALID = -1,
   MODEL_BONE_FLEX_TX = 0,
   MODEL_BONE_FLEX_TY = 1,
   MODEL_BONE_FLEX_TZ = 2,
 };
 
 enum ModelConfigAttachmentType_t : std::uint32_t {
-  MODEL_CONFIG_ATTACHMENT_INVALID = 18446744073709551615,
+  MODEL_CONFIG_ATTACHMENT_INVALID = -1,
   MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT = 0,
   MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE = 1,
   MODEL_CONFIG_ATTACHMENT_BONEMERGE = 2,
@@ -1032,7 +1032,7 @@ enum SosEditItemType_t : std::uint32_t {
 };
 
 enum VMixFilterType_t : std::uint16_t {
-  FILTER_UNKNOWN = 18446744073709551615,
+  FILTER_UNKNOWN = -1,
   FILTER_LOWPASS = 0,
   FILTER_HIGHPASS = 1,
   FILTER_BANDPASS = 2,
@@ -1248,7 +1248,7 @@ enum ParticleCollisionMode_t : std::uint32_t {
   COLLISION_MODE_USE_NEAREST_TRACE = 2,
   COLLISION_MODE_PER_FRAME_PLANESET = 1,
   COLLISION_MODE_INITIAL_TRACE_DOWN = 0,
-  COLLISION_MODE_DISABLED = 18446744073709551615,
+  COLLISION_MODE_DISABLED = -1,
 };
 
 enum ParticleColorBlendMode_t : std::uint32_t {
@@ -1260,7 +1260,7 @@ enum ParticleColorBlendMode_t : std::uint32_t {
 };
 
 enum Detail2Combo_t : std::uint32_t {
-  DETAIL_2_COMBO_UNINITIALIZED = 18446744073709551615,
+  DETAIL_2_COMBO_UNINITIALIZED = -1,
   DETAIL_2_COMBO_OFF = 0,
   DETAIL_2_COMBO_ADD = 1,
   DETAIL_2_COMBO_ADD_SELF_ILLUM = 2,
@@ -1277,7 +1277,7 @@ enum DetailCombo_t : std::uint32_t {
 };
 
 enum ScalarExpressionType_t : std::uint32_t {
-  SCALAR_EXPRESSION_UNINITIALIZED = 18446744073709551615,
+  SCALAR_EXPRESSION_UNINITIALIZED = -1,
   SCALAR_EXPRESSION_ADD = 0,
   SCALAR_EXPRESSION_SUBTRACT = 1,
   SCALAR_EXPRESSION_MUL = 2,
@@ -1289,7 +1289,7 @@ enum ScalarExpressionType_t : std::uint32_t {
 };
 
 enum VectorExpressionType_t : std::uint32_t {
-  VECTOR_EXPRESSION_UNINITIALIZED = 18446744073709551615,
+  VECTOR_EXPRESSION_UNINITIALIZED = -1,
   VECTOR_EXPRESSION_ADD = 0,
   VECTOR_EXPRESSION_SUBTRACT = 1,
   VECTOR_EXPRESSION_MUL = 2,
@@ -1301,7 +1301,7 @@ enum VectorExpressionType_t : std::uint32_t {
 };
 
 enum VectorFloatExpressionType_t : std::uint32_t {
-  VECTOR_FLOAT_EXPRESSION_UNINITIALIZED = 18446744073709551615,
+  VECTOR_FLOAT_EXPRESSION_UNINITIALIZED = -1,
   VECTOR_FLOAT_EXPRESSION_DOTPRODUCT = 0,
   VECTOR_FLOAT_EXPRESSION_DISTANCE = 1,
   VECTOR_FLOAT_EXPRESSION_DISTANCESQR = 2,
@@ -1311,7 +1311,7 @@ enum VectorFloatExpressionType_t : std::uint32_t {
 };
 
 enum MissingParentInheritBehavior_t : std::uint32_t {
-  MISSING_PARENT_DO_NOTHING = 18446744073709551615,
+  MISSING_PARENT_DO_NOTHING = -1,
   MISSING_PARENT_KILL = 0,
   MISSING_PARENT_FIND_NEW = 1,
   MISSING_PARENT_SAME_INDEX = 2,
@@ -1329,7 +1329,7 @@ enum ParticleSelection_t : std::uint32_t {
 };
 
 enum ParticlePinDistance_t : std::uint32_t {
-  PARTICLE_PIN_DISTANCE_NONE = 18446744073709551615,
+  PARTICLE_PIN_DISTANCE_NONE = -1,
   PARTICLE_PIN_DISTANCE_NEIGHBOR = 0,
   PARTICLE_PIN_DISTANCE_FARTHEST = 1,
   PARTICLE_PIN_DISTANCE_FIRST = 2,
@@ -1380,7 +1380,7 @@ enum ParticleRotationLockType_t : std::uint32_t {
 };
 
 enum ParticleEndcapMode_t : std::uint32_t {
-  PARTICLE_ENDCAP_ALWAYS_ON = 18446744073709551615,
+  PARTICLE_ENDCAP_ALWAYS_ON = -1,
   PARTICLE_ENDCAP_ENDCAP_OFF = 0,
   PARTICLE_ENDCAP_ENDCAP_ON = 1,
 };
@@ -1388,7 +1388,7 @@ enum ParticleEndcapMode_t : std::uint32_t {
 enum ParticleLightingQuality_t : std::uint32_t {
   PARTICLE_LIGHTING_PER_PARTICLE = 0,
   PARTICLE_LIGHTING_PER_VERTEX = 1,
-  PARTICLE_LIGHTING_PER_PIXEL = 18446744073709551615,
+  PARTICLE_LIGHTING_PER_PIXEL = -1,
 };
 
 enum StandardLightingAttenuationStyle_t : std::uint32_t {
@@ -1419,7 +1419,7 @@ enum ParticleLightFogLightingMode_t : std::uint32_t {
 };
 
 enum ParticleSequenceCropOverride_t : std::uint32_t {
-  PARTICLE_SEQUENCE_CROP_OVERRIDE_DEFAULT = 18446744073709551615,
+  PARTICLE_SEQUENCE_CROP_OVERRIDE_DEFAULT = -1,
   PARTICLE_SEQUENCE_CROP_OVERRIDE_FORCE_OFF = 0,
   PARTICLE_SEQUENCE_CROP_OVERRIDE_FORCE_ON = 1,
 };
@@ -1625,7 +1625,7 @@ enum PulseInstructionCode_t : std::uint16_t {
 };
 
 enum PulseValueType_t : std::uint32_t {
-  PVAL_INVALID = 18446744073709551615,
+  PVAL_INVALID = -1,
   PVAL_BOOL = 0,
   PVAL_INT = 1,
   PVAL_FLOAT = 2,
@@ -1641,13 +1641,13 @@ enum PulseValueType_t : std::uint32_t {
 };
 
 enum PulseCursorFlow_t : std::uint32_t {
-  INVALID = 18446744073709551615,
+  INVALID = -1,
   TERMINATE = 0,
   JUMP_OR_LEAP = 1,
 };
 
 enum ParticleFloatType_t : std::uint32_t {
-  PF_TYPE_INVALID = 18446744073709551615,
+  PF_TYPE_INVALID = -1,
   PF_TYPE_LITERAL = 0,
   PF_TYPE_NAMED_VALUE = 1,
   PF_TYPE_RANDOM_UNIFORM = 2,
@@ -1672,7 +1672,7 @@ enum ParticleFloatType_t : std::uint32_t {
 };
 
 enum ParticleFloatBiasType_t : std::uint32_t {
-  PF_BIAS_TYPE_INVALID = 18446744073709551615,
+  PF_BIAS_TYPE_INVALID = -1,
   PF_BIAS_TYPE_STANDARD = 0,
   PF_BIAS_TYPE_GAIN = 1,
   PF_BIAS_TYPE_EXPONENTIAL = 2,
@@ -1703,21 +1703,21 @@ enum PFNoiseTurbulence_t : std::uint32_t {
 };
 
 enum ParticleFloatRandomMode_t : std::uint32_t {
-  PF_RANDOM_MODE_INVALID = 18446744073709551615,
+  PF_RANDOM_MODE_INVALID = -1,
   PF_RANDOM_MODE_CONSTANT = 0,
   PF_RANDOM_MODE_VARYING = 1,
   PF_RANDOM_MODE_COUNT = 2,
 };
 
 enum ParticleFloatInputMode_t : std::uint32_t {
-  PF_INPUT_MODE_INVALID = 18446744073709551615,
+  PF_INPUT_MODE_INVALID = -1,
   PF_INPUT_MODE_CLAMPED = 0,
   PF_INPUT_MODE_LOOPED = 1,
   PF_INPUT_MODE_COUNT = 2,
 };
 
 enum ParticleFloatMapType_t : std::uint32_t {
-  PF_MAP_TYPE_INVALID = 18446744073709551615,
+  PF_MAP_TYPE_INVALID = -1,
   PF_MAP_TYPE_DIRECT = 0,
   PF_MAP_TYPE_MULT = 1,
   PF_MAP_TYPE_REMAP = 2,
@@ -1744,7 +1744,7 @@ enum ParticleModelType_t : std::uint32_t {
 };
 
 enum ParticleVecType_t : std::uint32_t {
-  PVEC_TYPE_INVALID = 18446744073709551615,
+  PVEC_TYPE_INVALID = -1,
   PVEC_TYPE_LITERAL = 0,
   PVEC_TYPE_LITERAL_COLOR = 1,
   PVEC_TYPE_NAMED_VALUE = 2,
@@ -1903,7 +1903,7 @@ enum ObserverInterpState_t : std::uint32_t {
 };
 
 enum RumbleEffect_t : std::uint32_t {
-  RUMBLE_INVALID = 18446744073709551615,
+  RUMBLE_INVALID = -1,
   RUMBLE_STOP_ALL = 0,
   RUMBLE_PISTOL = 1,
   RUMBLE_357 = 2,
@@ -3078,7 +3078,7 @@ enum ScriptedMoveTo_t : std::uint32_t {
 };
 
 enum ScriptedOnDeath_t : std::uint32_t {
-  SS_ONDEATH_NOT_APPLICABLE = 18446744073709551615,
+  SS_ONDEATH_NOT_APPLICABLE = -1,
   SS_ONDEATH_UNDEFINED = 0,
   SS_ONDEATH_RAGDOLL = 1,
   SS_ONDEATH_ANIMATED_DEATH = 2,
@@ -3106,7 +3106,7 @@ enum IChoreoServices::ChoreoState_t : std::uint32_t {
 
 enum InputBitMask_t : std::uint64_t {
   IN_NONE = 0,
-  IN_ALL = 18446744073709551615,
+  IN_ALL = -1,
   IN_ATTACK = 1,
   IN_JUMP = 2,
   IN_DUCK = 4,
@@ -3595,7 +3595,7 @@ enum ShardSolid_t : std::uint8_t {
 };
 
 enum AnimLoopMode_t : std::uint32_t {
-  ANIM_LOOP_MODE_INVALID = 18446744073709551615,
+  ANIM_LOOP_MODE_INVALID = -1,
   ANIM_LOOP_MODE_NOT_LOOPING = 0,
   ANIM_LOOP_MODE_LOOPING = 1,
   ANIM_LOOP_MODE_USE_SEQUENCE_SETTINGS = 2,
@@ -3603,7 +3603,7 @@ enum AnimLoopMode_t : std::uint32_t {
 };
 
 enum EntitySubclassScope_t : std::uint32_t {
-  SUBCLASS_SCOPE_NONE = 18446744073709551615,
+  SUBCLASS_SCOPE_NONE = -1,
   SUBCLASS_SCOPE_PRECIPITATION = 0,
   SUBCLASS_SCOPE_PLAYER_WEAPONS = 1,
   SUBCLASS_SCOPE_COUNT = 2,
@@ -3616,7 +3616,7 @@ enum SubclassVDataChangeType_t : std::uint32_t {
 };
 
 enum PlayerConnectedState : std::uint32_t {
-  PlayerNeverConnected = 18446744073709551615,
+  PlayerNeverConnected = -1,
   PlayerConnected = 0,
   PlayerConnecting = 1,
   PlayerReconnecting = 2,
@@ -3682,7 +3682,7 @@ enum ItemFlagTypes_t : std::uint8_t {
 };
 
 enum EntityDisolveType_t : std::uint32_t {
-  ENTITY_DISSOLVE_INVALID = 18446744073709551615,
+  ENTITY_DISSOLVE_INVALID = -1,
   ENTITY_DISSOLVE_NORMAL = 0,
   ENTITY_DISSOLVE_ELECTRICAL = 1,
   ENTITY_DISSOLVE_ELECTRICAL_LIGHT = 2,
@@ -3690,7 +3690,7 @@ enum EntityDisolveType_t : std::uint32_t {
 };
 
 enum HitGroup_t : std::uint32_t {
-  HITGROUP_INVALID = 18446744073709551615,
+  HITGROUP_INVALID = -1,
   HITGROUP_GENERIC = 0,
   HITGROUP_HEAD = 1,
   HITGROUP_CHEST = 2,
@@ -3771,7 +3771,7 @@ enum LifeState_t : std::uint32_t {
 };
 
 enum StanceType_t : std::uint32_t {
-  STANCE_CURRENT = 18446744073709551615,
+  STANCE_CURRENT = -1,
   STANCE_DEFAULT = 0,
   STANCE_CROUCHING = 1,
   NUM_STANCES = 2,
@@ -3897,7 +3897,7 @@ enum QuestProgress::Reason : std::uint32_t {
 };
 
 enum loadout_positions_t : std::uint32_t {
-  LOADOUT_POSITION_INVALID = 18446744073709551615,
+  LOADOUT_POSITION_INVALID = -1,
   LOADOUT_POSITION_MELEE = 0,
   LOADOUT_POSITION_C4 = 1,
   LOADOUT_POSITION_FIRST_AUTO_BUY_WEAPON = 0,
@@ -4109,7 +4109,7 @@ enum tablet_skin_state_t : std::uint8_t {
 };
 
 enum gear_slot_t : std::uint32_t {
-  GEAR_SLOT_INVALID = 18446744073709551615,
+  GEAR_SLOT_INVALID = -1,
   GEAR_SLOT_RIFLE = 0,
   GEAR_SLOT_PISTOL = 1,
   GEAR_SLOT_KNIFE = 2,
